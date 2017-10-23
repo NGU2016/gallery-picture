@@ -17,18 +17,63 @@ var imageDatas=(function imgUrl(imgDataArray) {
 function getRangeRandom(low,high){
      return Math.ceil(Math.random() *(high-low) +low)
 }
+/*
+* 旋转角度
+* */
+function get30DegRandom(){
+    return (Math.random() > 0.5 ?Math.ceil(Math.random() * 30):'-'+Math.ceil(Math.random() * 30))
+}
 
 class ImgFigure extends React.Component{
+    /**
+     * 点击处理函数
+     * ***/
+    handleClick (e){
+        var imgFigureClassName='img-figure';
+        imgFigureClassName +=this.props.arrange.isInverse ? ' ':'';
+        var hoverStyle=ReactDOM.findDOMNode(this.refs.hoverStyle);
+        for(var i in hoverStyle.classList){
+
+        }
+        console.log(hoverStyle.classList.toggle)
+        hoverStyle.classList.toggle('flip');
+        this.props.inverse();
+        e.stopPropagation();
+        e.preventDefault();
+    }
     render(){
+        var me=this;
+        var styleObj = {};
+        if(this.props.arrange){
+            styleObj = this.props.arrange.pos;
+        }
+        /**
+         * 添加旋转
+         * **/
+        if(this.props.arrange.rotate){
+            (['Moz','ms','Webkit','']).forEach(function(value){
+                if(!styleObj[value + 'Transform']) {
+                    styleObj[value + 'Transform'] = "rotate(" + this.props.arrange.rotate + "deg)";
+                }
+            }.bind(this));
+        }
+        var imgFigureClassName='img-figure';
+            imgFigureClassName +=this.props.arrange.isInverse ? ' ':'';
         return (
-            <figure className="img-figure">
-                <img className="img-style"  src={this.props.data.imgUrl}
-                    alt={this.props.title}
-                />
-                <figcaption>
-                    <h2 className="img-title">{this.props.data.title}</h2>
-                </figcaption>
-            </figure>
+            <div className={imgFigureClassName} style={styleObj} >
+                <div className="flipper-content" ref="hoverStyle">
+                    <div className="flipper">
+                        <div className="front">
+                            <img className="img-style"  src={me.props.data.imgUrl}
+                                alt={this.props.title } onClick={this.handleClick.bind(this)}
+                            ></img>
+                        </div>
+                        <div className="back" onClick= {this.handleClick.bind(this)}>
+                            <h2> {this.props.data.desc} </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
         )
     }
 }
@@ -54,15 +99,32 @@ class Gallary extends React.Component{
         };
         this.state ={
             imgsArrangArr:[
-            {
+            /*{
                 pos:{
                     left:'0',
                     top:'0'
-                }
-            }
+                },
+                rotate 0,
+                isInverse : false
+            }*/
         ]
         }
     }
+    /***
+     * 翻转图片
+     * **/
+    inverse (index){
+        return function(){
+            var imgsArrangeArr = this.state.imgsArrangArr;
+
+            imgsArrangeArr[index].isInverse =!imgsArrangeArr[index].isInverse;
+
+            this.setState({
+                imgsArrangArr : imgsArrangeArr
+            })
+        }.bind(this)
+    }
+
     /*
     *重新布局所有图片
     * */
@@ -87,6 +149,9 @@ class Gallary extends React.Component{
 
             imgsArrangeCenterArr[0].pos = centerPos;
 
+            //居中图片不需要旋转
+            imgsArrangeCenterArr[0].rotate=0;
+
             //取出要布局上侧的图片状态信息
 
             topImgSpliceIndex = Math.ceil(Math.random() * (imgsArrangArr.length -topImgNum));
@@ -95,10 +160,15 @@ class Gallary extends React.Component{
             )
             //布局位于上侧的图片
             imgsArrangeTopArr.forEach(function(value,index){
-                imgsArrangeTopArr[index].pos={
-                    top : getRangeRandom(vPosRangeTopY[0],vPosRangeTopY[1]),
-                    left : getRangeRandom(vPosRangeX[0],vPosRangeX[1])
+                imgsArrangeTopArr[index]={
+                    pos:{
+                        top : getRangeRandom(vPosRangeTopY[0],vPosRangeTopY[1]),
+                        left : getRangeRandom(vPosRangeX[0],vPosRangeX[1])
+                    },
+                    rotate :get30DegRandom()
                 }
+
+
             })
 
             //布局左右两侧的图片
@@ -112,11 +182,16 @@ class Gallary extends React.Component{
                     hPosRangeLORX = hPosRangeRightSecx;
                 }
 
-                imgsArrangArr[i].pos={
+                imgsArrangArr[i]={
+                    pos :{
 
-                    top:getRangeRandom(hPosRangY[0],hPosRangY[1]),
-                    left :getRangeRandom(hPosRangeLORX[0],hPosRangeLORX[1])
+                        top:getRangeRandom(hPosRangY[0],hPosRangY[1]),
+                        left :getRangeRandom(hPosRangeLORX[0],hPosRangeLORX[1])
+                    },
+                    rotate: get30DegRandom()
                 }
+
+
 
             }
             if(imgsArrangeTopArr && imgsArrangeTopArr[0]){
@@ -177,12 +252,15 @@ class Gallary extends React.Component{
                     pos:{
                         left:0,
                         top:0
-                    }
+                    },
+                    rotate :0,
+                    isInverse:false
                 }
             }
-            imgFigures.push(<ImgFigure data={value} ref={'imgFigure'+
-                index} arrange ={this.state.imgsArrangArr[index]}/>)
+            imgFigures.push(<ImgFigure key={index} data={value} ref={'imgFigure'+
+                index} arrange ={this.state.imgsArrangArr[index]} inverse={this.inverse(index)}/>)
         }.bind(this))
+
         return (
             <section className="stage" ref="stage">
                 <section className="img-sec">

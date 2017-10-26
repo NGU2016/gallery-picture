@@ -4,8 +4,8 @@ module.exports={
     devtool: 'eval-source-map',
     entry:"./src/js/main.js",
     output:{
-        path:"E:\\workspace\\gallery-picture",
-        filename:"bundle.js",
+        path:__dirname+"/build",
+        filename:"js/bundle.js"
     },
     module:{
         loaders:[
@@ -24,13 +24,7 @@ module.exports={
                 loader:'json-loader'
             },{
                 test:/\.(png|jpg)$/,
-                loader:'url-loader'
-            },{
-                test:/\.(png|jpg)$/,
-                loader:'file-loader',
-                query:{
-                    name :"builds/[name].[ext]"
-                }
+                loader:'url-loader?name=./imag/[hash:8].[ext]'
             }
 
         ]
@@ -44,7 +38,7 @@ module.exports={
         })
     ],
     devServer: {
-        contentBase: "./",
+        contentBase: "build",
         historyApiFallback: true,
         inline: true
     }

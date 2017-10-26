@@ -8,7 +8,7 @@ var imageData=require('../data/imgData.json');
 var imageDatas=(function imgUrl(imgDataArray) {
     for(var i=0,j=imgDataArray.length;i<j;i++){
         var singleImgData=imgDataArray[i];
-        singleImgData.imgUrl='./src/img/'+singleImgData.fileName;
+        singleImgData.imgUrl=require('../img/'+singleImgData.fileName);
         imgDataArray[i] = singleImgData;
     }
     return imgDataArray;

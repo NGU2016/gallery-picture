@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HelloWord from "../component/helloConpoment.js";
 import "../style/main.css"
 var imageData=require('../data/imgData.json');
+import ImgFigure from "../component/ImgFigure.js";
+import ControllerUI from "../component/Controller.js";
 
 //将信息转换成图片路径
 var imageDatas=(function imgUrl(imgDataArray) {
@@ -23,69 +24,6 @@ function getRangeRandom(low,high){
 function get30DegRandom(){
     return (Math.random() > 0.5 ?Math.ceil(Math.random() * 30):'-'+Math.ceil(Math.random() * 30))
 }
-
-class ImgFigure extends React.Component{
-    constructor(props){
-        super(props)
-        this.state ={
-            clicked:false
-        }
-    }
-    /**
-     * 点击处理函数
-     * ***/
-    handleClick (e){
-        this.setState({
-            clicked : true
-        })
-        if(this.props.arrange.isCenter){
-            this.props.inverse();
-        }else{
-            this.props.center();
-        }
-        e.stopPropagation();
-        e.preventDefault();
-    }
-    render(){
-        var me=this;
-        var styleObj = {};
-        if(this.props.arrange){
-            styleObj = this.props.arrange.pos;
-        }
-        /**
-         * 添加旋转
-         * **/
-        if(this.props.arrange.rotate){
-            (['Moz','ms','Webkit','']).forEach(function(value){
-                if(this.props.arrange.isCenter && styleObj){
-                    styleObj.zIndex = 114
-                }
-                if(!styleObj[value + 'Transform']) {
-                    styleObj[value + 'Transform'] = "rotate(" + this.props.arrange.rotate + "deg)";
-                }
-            }.bind(this));
-        }
-        var imageFront = "front";
-        var imageBack = "back"
-            imageFront += this.props.arrange.isInverse ? ' tranform' : ' ';
-            imageBack += this.props.arrange.isInverse ? ' ' : ' tranform';
-        return (
-            <div className="img-figure" style={styleObj} >
-                    <div className="flipper">
-                        <div className={imageFront}>
-                            <img className="img-style"  src={me.props.data.imgUrl}
-                                alt={this.props.title } onClick={this.handleClick.bind(this)}
-                            ></img>
-                        </div>
-                        <div className={imageBack} onClick= {this.handleClick.bind(this)}>
-                            <h2> {this.props.data.desc} </h2>
-                        </div>
-                    </div>
-            </div>
-        )
-    }
-}
-
 
 class Gallary extends React.Component{
     constructor (props) {
@@ -281,6 +219,9 @@ class Gallary extends React.Component{
                     isCenter : false
                 }
             }
+            controllerUnits.push(<ControllerUI key={index} center = {this.center(index)}
+                inverse = {this.inverse(index) } data={value} arrange ={this.state.imgsArrangArr[index]}
+            />)
             imgFigures.push(<ImgFigure key={index} data={value} ref={'imgFigure'+
                 index} arrange ={this.state.imgsArrangArr[index]} inverse={this.inverse(index)}
                     center = {this.center(index)}

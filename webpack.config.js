@@ -23,8 +23,8 @@ module.exports={
                 test:/\.json$/,
                 loader:'json-loader'
             },{
-                test:/\.(png|jpg)$/,
-                loader:'url-loader?name=./imag/[hash:8].[ext]'
+                test:/\.(PNG|JPG)$/i,
+                loader:'file-loader?name=./imag/[hash:8].[ext]'
             }
 
         ]
@@ -33,8 +33,7 @@ module.exports={
         new webpack.HotModuleReplacementPlugin(),
         new htmlWebpackPlugin({
             template:'./src/index.html',
-            filename: 'index.html',
-            hash:false
+            filename: 'index.html'
         })
     ],
     devServer: {

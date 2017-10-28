@@ -2,7 +2,7 @@ html,body {
     background-color: #222;
     width: 100%;
     height: 100%;
-    /*overflow-x:hidden;
+   /* overflow-x:hidden;
     overflow-y:hidden*/
 }
 .content {
@@ -24,14 +24,6 @@ html,body {
     margin-bottom: 60px;
 }
 
-.controller-nav{
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-  z-index: 101;
-  width:100%;
-  text-align: center;
-}
 .img-figure{
     position: absolute;
     width:328px;
@@ -92,6 +84,36 @@ html,body {
     text-align: center;
 }
 
+.controller-nav{
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    z-index: 101;
+    text-align: center;
+    padding-left: 21%;
+}
+.controller-unit{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.turn-img{
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    transition:1s;
+    -webkit-transition:1s;
+    -moz-transition:1s;
+    cursor: pointer;
+}
+.controller-unit :hover{
+    -webkit-transform:rotate(360deg) scale(1.5);
+    -moz-transform:rotate(360deg) scale(1.5);
+    -ms-transform:rotate(360deg) scale(1.5);
+    -o-transform:rotate(360deg) scale(1.5);
+}
 
 
 

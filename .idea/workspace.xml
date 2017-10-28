@@ -2,13 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9b5afe5-a49d-45a8-99bc-56800d818349" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/turn.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/Controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/component/ImgFigure.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/js/bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/component/helloConpoment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/1.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/10.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/11.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/12.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/13.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/14.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/15.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/16.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/17.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/2.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/3.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/4.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/5.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/6.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/7.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/8.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/9.JPG" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/imgData.json" afterPath="$PROJECT_DIR$/src/data/imgData.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main.js" afterPath="$PROJECT_DIR$/src/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/main.css" afterPath="$PROJECT_DIR$/src/style/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/0292dd3e.jpg" afterPath="$PROJECT_DIR$/src/img/10.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/1c4f5fc0.jpg" afterPath="$PROJECT_DIR$/src/img/8.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/3b01eb1a.jpg" afterPath="$PROJECT_DIR$/src/img/2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/41438f86.jpg" afterPath="$PROJECT_DIR$/src/img/14.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/42092f92.jpg" afterPath="$PROJECT_DIR$/src/img/17.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/5aa84c7c.jpg" afterPath="$PROJECT_DIR$/src/img/5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/66d6cd4a.jpg" afterPath="$PROJECT_DIR$/src/img/4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/6dd18890.jpg" afterPath="$PROJECT_DIR$/src/img/11.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/8dc2c1df.jpg" afterPath="$PROJECT_DIR$/src/img/15.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/8e26c9c2.jpg" afterPath="$PROJECT_DIR$/src/img/1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/9e10e164.jpg" afterPath="$PROJECT_DIR$/src/img/16.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/a224fffd.jpg" afterPath="$PROJECT_DIR$/src/img/13.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/b18b796e.jpg" afterPath="$PROJECT_DIR$/src/img/7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/b8d1d225.jpg" afterPath="$PROJECT_DIR$/src/img/3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/bbd6c3cf.jpg" afterPath="$PROJECT_DIR$/src/img/12.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/daede556.jpg" afterPath="$PROJECT_DIR$/src/img/6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/build/imag/e2f01fab.jpg" afterPath="$PROJECT_DIR$/src/img/9.jpg" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,19 +62,24 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="283">
+              <caret line="228" column="21" lean-forward="false" selection-start-line="228" selection-start-column="21" selection-end-line="228" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#135#185#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <file leaf-file-name="ImgFigure.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/ImgFigure.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="275">
+              <caret line="51" column="46" lean-forward="false" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/build/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -62,10 +104,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
+            <state relative-caret-position="252">
               <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
               <folding />
             </state>
@@ -75,8 +127,30 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/style/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="15" />
+            <state relative-caret-position="337">
+              <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/Controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="imgData.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data/imgData.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="76" column="9" lean-forward="false" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -93,19 +167,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>imageDataUrl</find>
-      <find>prop</find>
-      <find>hPosRangYhPosRangY</find>
-      <find>stageD</find>
-      <find>imgsArrangArr</find>
       <find>ixdex</find>
       <find>left</find>
-      <find>img-style</find>
       <find>centerPos</find>
       <find>for</find>
       <find>props</find>
       <find>bind</find>
-      <find>ImgFigure</find>
       <find>handleClick</find>
       <find>get30DegRandom</find>
       <find>img-sec</find>
@@ -123,6 +190,13 @@
       <find>flipper-content</find>
       <find>1.jpg</find>
       <find>imgUrl</find>
+      <find>ImgFigure</find>
+      <find>imgsArrangArr</find>
+      <find>controller-nav</find>
+      <find>img-style</find>
+      <find>imageFront</find>
+      <find>back-text</find>
+      <find>flipper</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,14 +211,16 @@
         <option value="$PROJECT_DIR$/src/style/main.scss" />
         <option value="$PROJECT_DIR$/build/bundle.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/data/imgData.json" />
-        <option value="$PROJECT_DIR$/src/style/main.css" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/js/main.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/build/js/bundle.js" />
-        <option value="$PROJECT_DIR$/build/index.html" />
+        <option value="$PROJECT_DIR$/src/js/main.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/component/ImgFigure.js" />
+        <option value="$PROJECT_DIR$/build/index.html" />
+        <option value="$PROJECT_DIR$/src/component/Controller.js" />
+        <option value="$PROJECT_DIR$/src/style/main.css" />
+        <option value="$PROJECT_DIR$/src/data/imgData.json" />
       </list>
     </option>
   </component>
@@ -187,7 +263,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,19 +279,43 @@
             <path>
               <item name="gallery-picture" type="b2602c69:ProjectViewProjectNode" />
               <item name="gallery-picture" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gallery-picture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gallery-picture" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gallery-picture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gallery-picture" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gallery-picture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gallery-picture" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gallery-picture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gallery-picture" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gallery-picture" type="b2602c69:ProjectViewProjectNode" />
               <item name="gallery-picture" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -230,8 +330,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspace\gallery-picture" />
       <recent name="E:\workspace\gallery-picture\src\img" />
+      <recent name="E:\workspace\gallery-picture" />
       <recent name="E:\workspace\gallary\build\src" />
       <recent name="E:\workspace\gallary\build" />
       <recent name="E:\workspace\gallary\src\img" />
@@ -269,25 +369,26 @@
       <workItem from="1508857458212" duration="2515000" />
       <workItem from="1508947853783" duration="779000" />
       <workItem from="1509025774861" duration="12131000" />
+      <workItem from="1509198320899" duration="12034000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70617000" />
+    <option name="totallyTimeSpent" value="82651000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2818448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21229868" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -308,40 +409,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/img/11.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/imgData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -354,18 +421,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3240">
           <caret line="183" column="6" lean-forward="false" selection-start-line="183" selection-start-column="6" selection-end-line="183" selection-end-column="6" />
-          <folding />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#135#185#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -377,7 +440,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#135#185#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -425,14 +491,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -444,7 +503,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#135#185#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -519,13 +581,6 @@
     <entry file="file://$PROJECT_DIR$/src/1c4f5fc0e42f0918be9cbc9c842c3ed9.jpg" />
     <entry file="file://$PROJECT_DIR$/src/bundle.js" />
     <entry file="file://$PROJECT_DIR$/src/src/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/component/helloConpoment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/bundle.js" />
     <entry file="file://$PROJECT_DIR$/build/build/1.jpg" />
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -540,40 +595,47 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/imgData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/js/1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build/js/1.jpg" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
+        <state relative-caret-position="252">
           <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bundle.js">
+    <entry file="file://$PROJECT_DIR$/bundle.js" />
+    <entry file="file://$PROJECT_DIR$/build/js/bundle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="991" column="0" lean-forward="true" selection-start-line="991" selection-start-column="0" selection-end-line="991" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/build/js/index.html" />
+    <entry file="file://$PROJECT_DIR$/src/component/helloConpoment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/imag/f0675f4c.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/imag/9b225223.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
@@ -584,34 +646,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/js/bundle.js">
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="991" column="0" lean-forward="true" selection-start-line="991" selection-start-column="0" selection-end-line="991" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/src/component/Controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/js/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="347">
+          <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        <state relative-caret-position="283">
+          <caret line="228" column="21" lean-forward="false" selection-start-line="228" selection-start-column="21" selection-end-line="228" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#135#185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/ImgFigure.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="51" column="46" lean-forward="false" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -619,15 +696,15 @@
     <entry file="file://$PROJECT_DIR$/build/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+    <entry file="file://$PROJECT_DIR$/src/data/imgData.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="288">
+          <caret line="76" column="9" lean-forward="false" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
           <folding />
         </state>
       </provider>
